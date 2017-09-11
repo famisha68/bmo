@@ -13,6 +13,7 @@ use warnings;
 use lib qw(. lib local/lib/perl5);
 
 use Bugzilla;
+my $cgi = Bugzilla->cgi;
 
 print $cgi->header('text/plain');
 print $cgi->http('X-Forwarded-For'), "\n";
